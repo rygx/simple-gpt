@@ -2,6 +2,10 @@
 
 This is a personal exercise to build, train and use GPT, inspired by [minGPT](https://github.com/karpathy/minGPT).
 
+## Prerequisite
+- [direnv](https://direnv.net/)
+- Python 3.9+
+
 ## Installation
 ```
 git clone https://github.com/rygx/simple-gpt.git && cd simple-gpt
@@ -21,4 +25,7 @@ python train/generate.py --dir "models" -u "9cdb42ed-0b16-4a3a-88e2-fffa61fa4f50
 ```
 Generation length (in number of tokens) and temperature can also be tuned using `--length/-l` and `--temp/-t` options.
 
-## TODOs
+## TODOs/plans
+- Easier setup (e.g., using setuptool)
+- Unit tests :P
+- Implement own tokenizer
