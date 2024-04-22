@@ -15,11 +15,14 @@ pip install pip-tools
 ```
 
 ## Usage
+### Data
+Any text-fromat data file should be usable, given the size can fit with training and inference environment.
+
 ### Train
 Use [train/train_gpt.py](train/train_gpt.py). After training, model state dictionary and hyper parameters will be stored in `models` directory.
 
 ### Generate
-Use [train/generate.py](train/generate.py). Under [models/](models/) directory there is already a coarsely pre-trained model with ID `9cdb42ed-0b16-4a3a-88e2-fffa61fa4f50`. Generate texts using this model with the following command:
+Use [train/generate.py](train/generate.py). Under [models/](models/) directory there is already a coarsely pre-trained model (using minGPT's [tinyshakespeare sample](https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt)) with ID `9cdb42ed-0b16-4a3a-88e2-fffa61fa4f50`. Generate texts using this model with the following command:
 ```
 python train/generate.py --dir "models" -u "9cdb42ed-0b16-4a3a-88e2-fffa61fa4f50" --prompt "QUEEN: "
 ```
