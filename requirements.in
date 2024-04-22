@@ -1,0 +1,4 @@
+ipykernel>=6.29
+numpy>=1.26.4
+torch>=2.2.1
+transformers>=4.39
