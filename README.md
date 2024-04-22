@@ -15,6 +15,10 @@ pip install pip-tools
 Use [train/train_gpt.py](train/train_gpt.py). After training, model state dictionary and hyper parameters will be stored in `models` directory.
 
 ### Generate
-Use [train/generate.py](train/generate.py).
+Use [train/generate.py](train/generate.py). Under [models/](models/) directory there is already a coarsely pre-trained model with ID `9cdb42ed-0b16-4a3a-88e2-fffa61fa4f50`. Generate texts using this model with the following command:
+```
+python train/generate.py --dir "models" -u "9cdb42ed-0b16-4a3a-88e2-fffa61fa4f50" --prompt "QUEEN: "
+```
+Generation length (in number of tokens) and temperature can also be tuned using `--length/-l` and `--temp/-t` options.
 
 ## TODOs
